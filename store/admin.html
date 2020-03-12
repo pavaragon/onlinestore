@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/admin.css">
+    <title>Register</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Catalog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="admin.html">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!--
+        code:
+        title:
+        price:
+        description:
+        category:
+        image:
+
+    -->
+
+    <div class="container">
+
+        <h1>Register a new item</h1>
+
+        <div class="form-group">
+            <label for="code">Code:</label>
+            <input type="text" class="form-control" id="code" placeholder="enter code">
+          </div>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" class="form-control" id="title" placeholder="enter title">
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" class="form-control" id="price" placeholder="enter price">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control" id="description" placeholder="enter description">
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" class="form-control" id="category" placeholder="enter category">
+        </div>
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="text" class="form-control" id="image" placeholder="enter image">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2" id="register-btn"> Register New Item</button>
+        <span id="alert-box" class="alert alert-success hidden" role="alert">
+            <strong> Item has been succesfully saved!</strong>
+        </span>
+
+
+    </div>
+
+    <script src="script/jquery-3.4.1.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/admin.js"></script>
+
+</body>
+</html>
